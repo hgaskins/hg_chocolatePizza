@@ -1,5 +1,58 @@
 body {
   padding: 40px;
+  font-family: 'Droid Serif', serif;
+}
+
+/*
+==========
+  fonts
+==========
+*/
+
+
+.logoImg {
+  padding-top: 10px;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.brandName {
+  font-family: 'Yellowtail', cursive;
+  font-size: 2.4em;
+  margin: 0;
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: .75em;
+  margin: 0;
+  padding-left: 10px;
+  line-height: 0;
+
+}
+
+.uppercase {
+  text-transform: uppercase;
+
+}
+
+.ingredients {
+  font-family: 'Patrick Hand', cursive;
+}
+
+/*
+===========
+  layout
+===========
+*/
+
+.divider {
+  background-image: url(../assets/ruler.png);
+  height: 20px;
+  margin: 50px 0;
+
 }
 
 .header {
@@ -7,7 +60,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 .headerLeft {
   display: flex;
@@ -80,6 +132,19 @@ body {
   justify-content: space-around;
 }
 
+.postPrint a {
+  color: #999;
+  text-decoration: none;
+  padding-left: 16px;
+  background-image: url(../assets/print-icon.png);
+  background-repeat: no-repeat;
+  background-position: center left;;
+}
+
+input[checked] + span  {
+  text-decoration: line-through;
+}
+
 li {
   list-style: none;
 }
@@ -87,6 +152,19 @@ li {
 .author {
   display: flex;
   flex-direction: row;
+  padding: 20px;
+}
+
+.share-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #bc7058;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
 }
 
 .bottom1 {
