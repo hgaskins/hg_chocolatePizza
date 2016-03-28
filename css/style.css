@@ -14,3 +14,46 @@ body {
   display: flex;
   flex-direction: column;
 }*/
+
+.list-inline > li {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+.icon a {
+  background-image: url(../assets/chocPizzaSprite.png);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.icon-twitter a {
+  background-position: -24px 0;
+}
+
+.icon-google a {
+  background-position: -48px 0;
+}
+
+.icon-instagram a {
+  background-position: -72px 0;
+}
+
+.icon-flickr a {
+  background-position: -96px 0;
+}
+
+.icon-pinterest a {
+  background-position: -120px 0;
+}
+
+.icon-rss a {
+  background-position: -144px 0;
+}
+
+.icon-email a {
+  background-position: -168px 0;
+}
