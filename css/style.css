@@ -1,7 +1,46 @@
 body {
   padding: 40px;
   font-family: 'Droid Serif', serif;
+  /*opacity: 1;
+  transition: 1s opacity;*/
 }
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+
+/*
+ * For JS fading
+body {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+fade-out {
+  opacity: 0;
+  transition: none;
+}
+*/
 
 /*
 ==========
@@ -30,12 +69,10 @@ h2 {
   margin: 0;
   padding-left: 10px;
   line-height: 0;
-
 }
 
 .uppercase {
   text-transform: uppercase;
-
 }
 
 .ingredients {
@@ -52,7 +89,6 @@ h2 {
   background-image: url(../assets/ruler.png);
   height: 20px;
   margin: 50px 0;
-
 }
 
 .header {
@@ -152,7 +188,14 @@ li {
 .author {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+}
+
+.author-image {
+  padding-right: 10px;
+}
+
+.author-bio h3 {
+  margin-top: 0;
 }
 
 .share-button {
@@ -167,7 +210,7 @@ li {
   line-height: 50px;
 }
 
-.bottom1 {
+.divider-img {
   width: 100%;
   height: 1px;
   background-color: #ddd;
@@ -175,7 +218,7 @@ li {
   margin: 31px 0;
 }
 
-.bottom1 img {
+.divider-img img {
   position: absolute;
   top: -16px;
   left: 0;
@@ -185,7 +228,7 @@ li {
   margin: 0 auto;
 }
 
-.footer {
+footer {
   text-align: center;
 }
 
