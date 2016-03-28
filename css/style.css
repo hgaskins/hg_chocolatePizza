@@ -63,12 +63,21 @@ h1 {
   margin: 0;
   padding-left: 10px;
 }
-
 h2 {
   font-size: .75em;
   margin: 0;
   padding-left: 10px;
   line-height: 0;
+}
+
+.headRight a:hover {
+  /*rotate social icons*/
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+a {
+  display: block;
 }
 
 .uppercase {
