@@ -1,5 +1,16 @@
+body {
+  padding: 30px 150px;
 
-.headerLeftText {
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/*.headerLeftText {
   display: flex;
   flex-direction: column;
-}
+}*/
