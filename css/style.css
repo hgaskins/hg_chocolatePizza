@@ -1,6 +1,5 @@
 body {
-  padding: 30px 150px;
-
+  padding: 40px;
 }
 
 .header {
@@ -10,10 +9,10 @@ body {
 }
 
 
-/*.headerLeftText {
+.headerLeft {
   display: flex;
-  flex-direction: column;
-}*/
+  flex-direction: row;
+}
 
 .list-inline > li {
   display: inline;
@@ -56,4 +55,45 @@ body {
 
 .icon-email a {
   background-position: -168px 0;
+}
+
+.postMeta {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*code below creates responsive image display*/
+.imgResponsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-indent {
+  text-indent: 30px;
+}
+
+.ingredients {
+  background-image: url(../assets/list-bg.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+===================
+  Media Quieries
+===================
+*/
+
+@media (min-width: 899px) {
+  body {
+    width: 899px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
