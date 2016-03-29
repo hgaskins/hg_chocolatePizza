@@ -70,22 +70,22 @@ h2 {
   line-height: 0;
 }
 
+label {
+  font-size: 20px;
+}
+
 .headRight a:hover {
   /*rotate social icons*/
   -ms-transform: rotate(30deg);
   transform: rotate(30deg);
 }
 
-a {
-  display: block;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
 
-.ingredients {
-  font-family: 'Patrick Hand', cursive;
+article h1 {
+  margin-bottom: 0;
 }
 
 /*
@@ -103,6 +103,7 @@ a {
 .header {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -117,6 +118,10 @@ a {
 
 .hide {
   display: none;
+}
+
+ul {
+  padding-left: 0;
 }
 
 .icon a {
@@ -159,6 +164,13 @@ a {
   justify-content: space-between;
 }
 
+.postMeta p {
+  font-size: 14px;
+  color: #999;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 /*code below creates responsive image display*/
 .imgResponsive {
   display: block;
@@ -171,10 +183,18 @@ a {
 }
 
 .ingredients {
+  font-family: 'Patrick Hand', cursive;
   background-image: url(../assets/list-bg.png);
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 20px;
+  height: 260px;
+}
+
+.ingredients li {
+  line-height: 1.55;
 }
 
 .postPrint a {
@@ -186,8 +206,12 @@ a {
   background-position: center left;;
 }
 
-input[checked] + span  {
+input:checked + span {
   text-decoration: line-through;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
 }
 
 li {
@@ -197,6 +221,7 @@ li {
 .author {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .author-image {
@@ -205,6 +230,12 @@ li {
 
 .author-bio h3 {
   margin-top: 0;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.author-bio p {
+  margin-top: 10px;
 }
 
 .share-button {
@@ -224,7 +255,7 @@ li {
   height: 1px;
   background-color: #ddd;
   position: relative;
-  margin: 31px 0;
+  margin: 51px 0 31px 0;
 }
 
 .divider-img img {
@@ -238,7 +269,13 @@ li {
 }
 
 footer {
+  color: #999;
   text-align: center;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
 }
 
 /*
@@ -247,10 +284,16 @@ footer {
 ===================
 */
 
-@media (min-width: 899px) {
+@media (min-width: 720px) {
+  .header, .author {
+    flex-flow: row;
+  }
+}
+
+@media (min-width: 940px) {
   body {
-    width: 899px;
+    width: 900px;
     margin: 0 auto;
-    padding: 0;
+    padding: 40px 0;
   }
 }
