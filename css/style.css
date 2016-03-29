@@ -184,13 +184,16 @@ ul {
 
 .ingredients {
   font-family: 'Patrick Hand', cursive;
-  background-image: url(../assets/list-bg.png);
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  padding: 20px;
-  height: 260px;
+  background-image: url(../assets/list-bg.png), url(../assets/list-bg.png);
+  background-position: left bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  height: 480px;
+  padding: 35px 20px 20px 50px;
+}
+
+.ingredients ul {
+  padding: 0;
+  margin: 0;
 }
 
 .ingredients li {
@@ -287,6 +290,21 @@ footer a {
 @media (min-width: 720px) {
   .header, .author {
     flex-flow: row;
+  }
+
+  .ingredients {
+    background-image: url(../assets/list-bg.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 245px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 35px 20px 20px 20px;
+  }
+
+  .ingredients li {
+    line-height: 1.55;
   }
 }
 
